@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manjusha Maddela · Full Stack Developer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23d4a64a'>M</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="backdrop"></div>
+
+    <header class="site-header">
+        <div class="inner">
+            <div class="brand">
+                <a href="index.html" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+                    <i class="fas fa-laptop-code" style="color: var(--gold); font-size: 1.6rem;"></i>
+                    <div class="brand-name" style="font-size: 1.25rem; font-style: normal; letter-spacing: 0.05em; font-weight: 500; color: var(--fg);">Manjusha <span style="color: var(--gold); font-style: italic; text-transform: lowercase;">Portfolio</span></div>
+                </a>
+            </div>
+            <div class="nav-pill">
+                <a href="#about">About</a>
+                <a href="#experience">Work Experience</a>
+                <a href="projects.html">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#resume">Resume</a>
+                <a href="personal.html">Personal Info</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="profile-btn" id="profileBtn" aria-label="Profile">
+                <div class="avatar-circle"><i class="fas fa-user"></i></div>
+                <span>Manjusha Maddela</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. HERO / HEADING -->
+        <section class="hero container reveal">
+            <div class="eyebrow gold"><span class="rule"></span> PORTFOLIO 2026</div>
+            <h1>
+                <span class="line" style="font-size: clamp(2rem, 5vw, 4rem);"><span>Software Engineer | Full Stack <span class="italic" style="color: var(--gold);">Developer</span></span></span>
+                <span class="line" style="font-size: clamp(2rem, 5vw, 4rem);"><span>| Database Engineer<span class="dot">.</span></span></span>
+            </h1>
+            <div class="hero-meta reveal-stagger">
+                <div class="hero-lead">
+                    I'm <span class="fg">Manjusha Maddela</span> — a Software Engineer specializing in Full Stack and Database Engineering. I design resilient APIs, architect scalable data models, and build high-performance web & mobile applications from <em>schema to deploy.</em>
+                </div>
+                <div>
+                    <div class="meta-label">BASED IN</div>
+                    <div class="meta-value">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        India · Remote-friendly
+                    </div>
+                </div>
+                <div>
+                    <div class="meta-label">CURRENTLY</div>
+                    <div class="meta-value">XSILICA Software Solutions</div>
+                </div>
+            </div>
+            <div class="hero-ctas reveal fade-up d1">
+                <a href="projects.html" class="btn-primary">View Selected Work <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                <a href="personal.html" class="btn-ghost">Personal Information</a>
+                <a href="#contact" class="btn-ghost">Get in touch</a>
+            </div>
+        </section>
+
+        <!-- MARQUEE -->
+        <div class="marquee reveal fade-up d2">
+            <div class="marquee-track">
+                <div class="marquee-group">
+                    <span class="marquee-star">✦</span> <span>NestJS</span>
+                    <span class="marquee-star">✦</span> <span>GraphQL</span>
+                    <span class="marquee-star">✦</span> <span>Django</span>
+                    <span class="marquee-star">✦</span> <span>MySQL</span>
+                    <span class="marquee-star">✦</span> <span>React.js</span>
+                    <span class="marquee-star">✦</span> <span>React Native</span>
+                    <span class="marquee-star">✦</span> <span>PostgreSQL</span>
+                    <span class="marquee-star">✦</span> <span>Prisma</span>
+                    <span class="marquee-star">✦</span> <span>Go</span>
+                    <span class="marquee-star">✦</span> <span>Redis</span>
+                </div>
+                <div class="marquee-group">
+                    <span class="marquee-star">✦</span> <span>NestJS</span>
+                    <span class="marquee-star">✦</span> <span>GraphQL</span>
+                    <span class="marquee-star">✦</span> <span>Django</span>
+                    <span class="marquee-star">✦</span> <span>MySQL</span>
+                    <span class="marquee-star">✦</span> <span>React.js</span>
+                    <span class="marquee-star">✦</span> <span>React Native</span>
+                    <span class="marquee-star">✦</span> <span>PostgreSQL</span>
+                    <span class="marquee-star">✦</span> <span>Prisma</span>
+                    <span class="marquee-star">✦</span> <span>Go</span>
+                    <span class="marquee-star">✦</span> <span>Redis</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. CAREER OBJECTIVE / ABOUT / BENTO -->
+        <section class="container" id="about">
+            <div class="bento reveal-stagger">
+                <div class="bento-card bento-about">
+                    <div class="glow"></div>
+                    <div class="eyebrow"><span class="rule"></span> ABOUT</div>
+                    <p>I am passionate about architecting <em>scalable systems</em>, designing robust database schemas, and streamlining complex business workflows.</p>
+                    <p>My core expertise lies in backend architecture and database engineering—optimizing queries, designing APIs, and structuring 3NF schemas—while possessing the full-stack fluency required to deliver seamless end-to-end features.</p>
+                </div>
+                <div class="bento-card bento-stat gold">
+                    <div class="num">1<small>yr</small></div>
+                    <div class="label">Professional experience shipping production software.</div>
+                </div>
+                <div class="bento-card bento-stat">
+                    <div class="num">3+</div>
+                    <div class="label">Production platforms shipped across web and mobile.</div>
+                </div>
+                <div class="bento-card bento-quote">
+                    "Good backend work is invisible <span class="quote-mark">—</span> until you need it to scale. That's where I like to live."
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. PROFESSIONAL EXPERIENCE -->
+        <section class="container" id="experience">
+            <div class="section-head reveal">
+                <div>
+                    <div class="eyebrow"><span class="rule"></span> EXPERIENCE</div>
+                    <h2 class="section-title">Career <span class="italic">timeline.</span></h2>
+                </div>
+            </div>
+            
+            <div class="timeline">
+                <!-- Job 1 -->
+                <div class="t-row reveal">
+                    <div class="t-card-wrap">
+                        <div class="t-dot"></div>
+                        <div class="t-card">
+                            <div class="t-year">May 2025 — Present</div>
+                            <h3>Software Developer</h3>
+                            <div class="t-company">XSILICA Software Solutions Pvt Ltd</div>
+                            <div class="t-desc">
+                                <p style="margin-bottom: 16px; color: var(--fg); font-size: 15px;">
+                                    Experienced in Full Stack Development, Database Engineering, API Development, and Application Deployment, building scalable, secure, and high-performance web and mobile applications.
+                                </p>
+                                <ul style="list-style: none; padding-left: 0; display: flex; flex-direction: column; gap: 24px;">
+                                    <li>
+                                        <strong style="color: var(--fg); font-weight: 600; font-size: 1.1rem; display: block; margin-bottom: 12px;">Full Stack Development</strong>
+                                        <ul style="list-style: none; padding-left: 12px; display: flex; flex-direction: column; gap: 10px;">
+                                            <li style="display: flex; gap: 10px; align-items: flex-start;">
+                                                <span style="color: var(--gold); margin-top: 2px;">✦</span> 
+                                                <span>Designed, developed, and maintained scalable web and mobile applications using modern frontend and backend technologies.</span>
+                                            </li>
+                                            <li style="display: flex; gap: 10px; align-items: flex-start;">
+                                                <span style="color: var(--gold); margin-top: 2px;">✦</span> 
+                                                <span>Built secure and high-performance RESTful APIs and GraphQL APIs to support seamless communication between web, mobile, and backend systems.</span>
+                                            </li>
+                                            <li style="display: flex; gap: 10px; align-items: flex-start;">
+                                                <span style="color: var(--gold); margin-top: 2px;">✦</span> 
+                                                <span>Developed responsive user interfaces and integrated frontend applications with backend services to deliver intuitive and user-friendly experiences.</span>
+                                            </li>
+                                            <li style="display: flex; gap: 10px; align-items: flex-start;">
+                                                <span style="color: var(--gold); margin-top: 2px;">✦</span> 
+                                                <span>Implemented robust business logic, API integrations, and third-party service integrations to meet application and business requirements.</span>
+                                            </li>
+                                            <li style="display: flex; gap: 10px; align-items: flex-start;">
+                                                <span style="color: var(--gold); margin-top: 2px;">✦</span> 
+                                                <span>Developed secure Authentication, Authorization, and Role-Based Access Control (RBAC) modules to protect applications and user data.</span>
+                                            </li>
+                                            <li style="display: flex; gap: 10px; align-items: flex-start;">
+                                                <span style="color: var(--gold); margin-top: 2px;">✦</span> 
+                                                <span>Integrated applications with MySQL, Microsoft SQL Server (MSSQL), PostgreSQL, SQLite and Redis databases using Prisma ORM and optimized data access for high-performance applications.</span>
+                                            </li>
+                                            <li style="display: flex; gap: 10px; align-items: flex-start;">
+                                                <span style="color: var(--gold); margin-top: 2px;">✦</span> 
+                                                <span>Collaborated with cross-functional teams, including frontend developers, QA engineers, UI/UX designers, and stakeholders, following Agile/Scrum methodologies.</span>
+                                            </li>
+                                            <li style="display: flex; gap: 10px; align-items: flex-start;">
+                                                <span style="color: var(--gold); margin-top: 2px;">✦</span> 
+                                                <span>Utilized Git and GitHub for version control, code reviews, branch management, and collaborative software development.</span>
+                                            </li>
+                                            <li style="display: flex; gap: 10px; align-items: flex-start;">
+                                                <span style="color: var(--gold); margin-top: 2px;">✦</span> 
+                                                <span>Managed application deployment, Linux server administration, Nginx configuration, environment setup, production releases, application monitoring, and production issue resolution to ensure high availability, reliability, and optimal system performance.</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong style="color: var(--fg); font-weight: 600; font-size: 1.1rem; display: block; margin-bottom: 12px;">Database Design, Development & Management</strong>
+                                        <ul style="list-style: none; padding-left: 12px; display: flex; flex-direction: column; gap: 10px;">
+                                            <li style="display: flex; gap: 10px; align-items: flex-start;">
+                                                <span style="color: var(--gold); margin-top: 2px;">✦</span> 
+                                                <span>Designed, developed, and maintained scalable relational databases using MySQL, Microsoft SQL Server (MSSQL), PostgreSQL, SQLite and Redis.</span>
+                                            </li>
+                                            <li style="display: flex; gap: 10px; align-items: flex-start;">
+                                                <span style="color: var(--gold); margin-top: 2px;">✦</span> 
+                                                <span>Designed normalized database schemas, data models, ER diagrams, table relationships, constraints, primary & foreign keys, and indexes for scalable enterprise applications.</span>
+                                            </li>
+                                            <li style="display: flex; gap: 10px; align-items: flex-start;">
+                                                <span style="color: var(--gold); margin-top: 2px;">✦</span> 
+                                                <span>Performed schema modifications, data migrations, production deployments, and database version upgrades while ensuring data integrity, data consistency, and minimal downtime.</span>
+                                            </li>
+                                            <li style="display: flex; gap: 10px; align-items: flex-start;">
+                                                <span style="color: var(--gold); margin-top: 2px;">✦</span> 
+                                                <span>Developed and optimized complex SQL queries, Stored Procedures, Views, Triggers, and other database objects to improve performance, maintainability, and data processing efficiency.</span>
+                                            </li>
+                                            <li style="display: flex; gap: 10px; align-items: flex-start;">
+                                                <span style="color: var(--gold); margin-top: 2px;">✦</span> 
+                                                <span>Implemented query optimization, indexing strategies, and performance tuning to enhance database performance and reduce query execution time.</span>
+                                            </li>
+                                            <li style="display: flex; gap: 10px; align-items: flex-start;">
+                                                <span style="color: var(--gold); margin-top: 2px;">✦</span> 
+                                                <span>Managed database security, authentication, authorization, backup & recovery, user access management, and routine database maintenance to ensure secure and reliable operations.</span>
+                                            </li>
+                                            <li style="display: flex; gap: 10px; align-items: flex-start;">
+                                                <span style="color: var(--gold); margin-top: 2px;">✦</span> 
+                                                <span>Utilized Prisma ORM for data modeling, schema design, database migrations, and seamless integration with backend services.</span>
+                                            </li>
+                                            <li style="display: flex; gap: 10px; align-items: flex-start;">
+                                                <span style="color: var(--gold); margin-top: 2px;">✦</span> 
+                                                <span>Collaborated with cross-functional teams to deliver scalable, secure, and high-performance database solutions aligned with business requirements and application architecture.</span>
+                                            </li>
+                                            <li style="display: flex; gap: 10px; align-items: flex-start;">
+                                                <span style="color: var(--gold); margin-top: 2px;">✦</span> 
+                                                <span>Performed database troubleshooting, performance monitoring, production support, and issue resolution to ensure high availability, system reliability, and optimal performance.</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. SKILLS -->
+        <section class="container" id="skills">
+            <div class="skills-intro reveal">
+                <div>
+                    <div class="eyebrow"><span class="rule"></span> TOOLKIT</div>
+                    <h2 class="section-title">Stack I <span class="italic">build with.</span></h2>
+                </div>
+                <div class="section-aside">From relational schemas to API gateways to React surfaces — chosen deliberately for maintainability, performance and speed of delivery.</div>
+            </div>
+            
+            <div class="skills-grid reveal-stagger">
+                <!-- 1. Programming Languages -->
+                <div class="bento-card skill-card">
+                    <div class="icon"><i class="fas fa-code"></i></div>
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>JavaScript (ES6+)</li>
+                        <li>TypeScript</li>
+                        <li>Python</li>
+                        <li>PHP</li>
+                    </ul>
+                </div>
+                <!-- 2. Frontend -->
+                <div class="bento-card skill-card">
+                    <div class="icon"><i class="fas fa-desktop"></i></div>
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>React.js</li>
+                        <li>Next.js</li>
+                        <li>React Native</li>
+                        <li>HTML5 </li>
+                        <li>CSS3</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+                <!-- 3. Backend -->
+                <div class="bento-card skill-card">
+                    <div class="icon"><i class="fas fa-server"></i></div>
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>NestJS</li>
+                        <li>Django </li>
+                        <li>Laravel</li>
+                        <li>REST APIs</li>
+                        <li>GraphQL APIs</li>
+                    </ul>
+                </div>
+                <!-- 4. Database Management -->
+                <div class="bento-card skill-card">
+                    <div class="icon"><i class="fas fa-database"></i></div>
+                    <h3>Database</h3>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>PostgreSQL</li>
+                        <li>MSSQL</li>
+                        <li>SQLite</li>
+                        <li>Redis</li>
+                        <li>Prisma ORM</li>
+                        <li>Schema Design</li>
+                    </ul>
+                </div>
+                <!-- 5. Tools & Testing -->
+                <div class="bento-card skill-card">
+                    <div class="icon"><i class="fas fa-tools"></i></div>
+                    <h3>Dev Tools</h3>
+                    <ul>
+                        <li>VSCode</li>
+                        <li>Visual Studio</li>
+                        <li>Android Studio</li>
+                        <li>Google Antigravity</li>
+                        <li>Postman</li>
+                        <li>Altair</li>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
+                <!-- 6. Deployment & Server Management -->
+                <div class="bento-card skill-card">
+                    <div class="icon"><i class="fas fa-cloud"></i></div>
+                    <h3>Deployment</h3>
+                    <ul>
+                        <li>Linux (Ubuntu)</li>
+                        <li>Nginx / Apache</li>
+                        <li>AWS / DigitalOcean</li>
+                        <li>CI/CD</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. EDUCATION -->
+        <section class="container" id="education">
+            <div class="section-head reveal">
+                <div>
+                    <div class="eyebrow"><span class="rule"></span> EDUCATION</div>
+                    <h2 class="section-title">Academic <span class="italic">background.</span></h2>
+                </div>
+            </div>
+            
+            <div class="timeline timeline-split">
+                <!-- Edu 1 -->
+                <div class="t-row reveal">
+                    <div class="t-card-wrap">
+                        <div class="t-dot"></div>
+                        <div class="t-card">
+                            <div class="t-year">2020 — 2024</div>
+                            <h3>B.Tech, ECE</h3>
+                            <div class="t-company">PBR Visvodaya Institute of Technology & Science · 85%</div>
+                            <div class="t-desc">Bachelor's degree with a focus on systems thinking, electronics fundamentals and applied software engineering coursework.</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Edu 2 -->
+                <div class="t-row reveal">
+                    <div class="t-card-wrap">
+                        <div class="t-dot"></div>
+                        <div class="t-card">
+                            <div class="t-year">2018 — 2020</div>
+                            <h3>Intermediate, MPC</h3>
+                            <div class="t-company">APSWR Junior College · 9.32 CGPA</div>
+                            <div class="t-desc">Mathematics, Physics, Chemistry foundation.</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Edu 3 -->
+                <div class="t-row reveal">
+                    <div class="t-card-wrap">
+                        <div class="t-dot"></div>
+                        <div class="t-card">
+                            <div class="t-year">2017 — 2018</div>
+                            <h3>SSC</h3>
+                            <div class="t-company">ZP High School · 8.3 CGPA</div>
+                            <div class="t-desc">Secondary School Certificate.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. CERTIFICATIONS -->
+        <section class="container" id="certifications">
+            <div class="certs reveal fade-up d2">
+                <div class="certs-head">
+                    <div class="eyebrow"><span class="rule"></span> CERTIFICATIONS</div>
+                    <div class="count">4 credentials</div>
+                </div>
+                <div class="certs-grid">
+                    <div class="cert">
+                        <div class="t">Full-Stack Python</div>
+                        <div class="s">Codegnan</div>
+                    </div>
+                    <div class="cert">
+                        <div class="t">Full-Stack Python (Internship)</div>
+                        <div class="s">Assistive Technologies</div>
+                    </div>
+                    <div class="cert">
+                        <div class="t">Embedded Systems</div>
+                        <div class="s">NPTEL</div>
+                    </div>
+                    <div class="cert">
+                        <div class="t">Data Analysis with Python</div>
+                        <div class="s">Workshop</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESUME VIEWER -->
+        <section class="container reveal" id="resume" style="padding-top: 100px;">
+            <div class="bento-card" style="text-align: center; padding: 64px 24px; background: linear-gradient(135deg, rgba(26,24,22,0.6) 0%, rgba(35,33,32,0.8) 100%);">
+                <div class="eyebrow" style="justify-content: center;"><span class="rule"></span> MY RESUME</div>
+                <h2 style="font-family: var(--font-display); font-size: clamp(2.5rem, 5vw, 4rem); margin: 24px 0;">View Full <span class="italic" style="color: var(--gold);">Document</span></h2>
+                <p style="color: var(--muted); max-width: 500px; margin: 0 auto 40px; font-size: 1.1rem; line-height: 1.6;">
+                    Explore my complete professional background, education, and technical expertise in detail.
+                </p>
+                <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                    <input type="file" id="resumeUploadInput" accept="application/pdf" style="display: none;">
+                    <button class="btn-ghost" id="uploadResumeBtn" style="border-color: var(--gold); color: var(--gold);">
+                        <i class="fas fa-upload"></i> Upload Resume
+                    </button>
+                    <button class="btn-primary" id="openResumeModal">
+                        <i class="fas fa-eye"></i> View Resume
+                    </button>
+                    <a href="resume.pdf" class="btn-ghost" download id="downloadResumeBtn">
+                        <i class="fas fa-download"></i> Download PDF
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. CONTACT -->
+        <section class="contact" id="contact">
+            <div class="glow"></div>
+            <div class="inner reveal">
+                <h2>Worth <span class="italic">building.</span></h2>
+                <div class="contact-lead">Open to full-time, contract and collaborative opportunities. The fastest way to reach me is email.</div>
+                
+                <a href="mailto:manjushamaddela@gmail.com" class="contact-cta">
+                    manjushamaddela@gmail.com <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+                
+                <div class="contact-grid reveal-stagger">
+                    <a href="mailto:manjushamaddela@gmail.com" class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <div class="l">Email</div>
+                        <div class="v">manjushamaddela@gmail.com</div>
+                    </a>
+                    <a href="tel:+919492791919" class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <div class="l">Phone</div>
+                        <div class="v">+91 9492791919</div>
+                    </a>
+                    <a href="https://linkedin.com/in/manjushamaddela" class="contact-card" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                        <div class="l">LinkedIn</div>
+                        <div class="v">manjushamaddela</div>
+                    </a>
+                    <a href="https://github.com/ManjushaMaddela" class="contact-card" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <div class="l">GitHub</div>
+                        <div class="v">ManjushaMaddela</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer reveal">
+        <div class="footer-inner">
+            <div class="signature">M manjusha</div>
+            <div>© <span id="year">2026</span> Manjusha Maddela. All rights reserved.</div>
+            <div class="build">Designed for scale.</div>
+        </div>
+    </footer>
+
+    <!-- OFFCANVAS PROFILE -->
+    <div class="offcanvas-backdrop" id="offcanvasBackdrop"></div>
+    <div class="offcanvas" id="offcanvas">
+        <button class="offcanvas-close" id="offcanvasClose"><i class="fas fa-times"></i></button>
+        <div class="offcanvas-profile-header">
+            <div class="offcanvas-avatar">M</div>
+            <div>
+                <div class="offcanvas-name">Manjusha Maddela</div>
+                <div class="offcanvas-title">Full Stack & Database Engineer</div>
+            </div>
+        </div>
+        
+        <div class="offcanvas-divider"></div>
+        
+        <div class="dropdown-menu">
+            <a href="index.html#about" class="dropdown-item">
+                <i class="fas fa-user"></i> About
+            </a>
+            <a href="index.html#experience" class="dropdown-item">
+                <i class="fas fa-briefcase"></i> Experience
+            </a>
+            <a href="projects.html" class="dropdown-item">
+                <i class="fas fa-code"></i> Projects
+            </a>
+            <a href="personal.html" class="dropdown-item">
+                <i class="fas fa-id-card"></i> Personal Details
+            </a>
+        </div>
+
+        <div class="offcanvas-divider"></div>
+        
+        <div class="dropdown-menu">
+            <a href="#contact" class="dropdown-item">
+                <i class="fas fa-envelope"></i> Contact Me
+            </a>
+            <a href="resume.pdf" class="dropdown-item" download>
+                <i class="fas fa-download"></i> Download Resume
+            </a>
+        </div>
+    </div>
+
+    <!-- RESUME MODAL -->
+    <div class="resume-modal-backdrop" id="resumeModalBackdrop"></div>
+    <div class="resume-modal" id="resumeModal">
+        <div class="resume-modal-header">
+            <div class="resume-modal-title">Manjusha Maddela - Resume</div>
+            <button class="resume-modal-close" id="resumeModalClose" aria-label="Close Resume"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="resume-modal-content">
+            <!-- Using a dummy PDF for now so you can see it working! -->
+            <embed id="resumeEmbed" src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" type="application/pdf" width="100%" height="100%" />
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

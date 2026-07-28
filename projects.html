@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manjusha Maddela · Projects</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23d4a64a'>M</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="backdrop"></div>
+
+    <header class="site-header">
+        <div class="inner">
+            <div class="brand">
+                <a href="index.html" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+                    <i class="fas fa-laptop-code" style="color: var(--gold); font-size: 1.6rem;"></i>
+                    <div class="brand-name" style="font-size: 1.25rem; font-style: normal; letter-spacing: 0.05em; font-weight: 500; color: var(--fg);">Manjusha <span style="color: var(--gold); font-style: italic; text-transform: lowercase;">Portfolio</span></div>
+                </a>
+            </div>
+            <div class="nav-pill">
+                <a href="index.html#about">About</a>
+                <a href="index.html#experience">Work Experience</a>
+                <a href="projects.html" style="color: var(--fg); background: var(--surface-2);">Projects</a>
+                <a href="index.html#skills">Skills</a>
+                <a href="index.html#resume">Resume</a>
+                <a href="personal.html">Personal Info</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+            <button class="profile-btn" id="profileBtn" aria-label="Profile">
+                <div class="avatar-circle"><i class="fas fa-user"></i></div>
+                <span>Manjusha Maddela</span>
+            </button>
+        </div>
+    </header>
+
+    <main style="padding-top: 120px;">
+        <!-- PROJECTS -->
+        <section class="container" id="work">
+            <div class="section-head reveal">
+                <div>
+                    <div class="eyebrow"><span class="rule"></span> SELECTED WORK</div>
+                    <h2 class="section-title">Things I've <span class="italic">built.</span></h2>
+                </div>
+                <div class="section-aside">Production systems I've designed, engineered and shipped — from the database up.</div>
+            </div>
+
+            <div class="projects-list reveal-stagger">
+                
+                <!-- Database & Deployment Experience -->
+                <div class="bento-card" style="margin-bottom: 48px; border: 1px solid var(--gold-glow); background: linear-gradient(135deg, rgba(26,24,22,0.9) 0%, rgba(35,33,32,0.9) 100%);">
+                    <div class="eyebrow" style="color: var(--gold);"><span class="rule" style="background: var(--gold);"></span> CORE EXPERTISE</div>
+                    <h3 style="font-family: var(--font-display); font-size: 2rem; color: var(--fg); margin-top: 16px; margin-bottom: 24px;">Database & Deployment Experience</h3>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 16px;">
+                        <li style="display: flex; gap: 16px; align-items: flex-start;">
+                            <i class="fas fa-database" style="color: var(--gold); margin-top: 4px; font-size: 1.2rem;"></i>
+                            <p style="margin: 0; color: var(--fg); line-height: 1.6; font-size: 1.1rem;">MySQL schema design, query optimization, and data administration using MySQL.</p>
+                        </li>
+                        <li style="display: flex; gap: 16px; align-items: flex-start;">
+                            <i class="fas fa-server" style="color: var(--gold); margin-top: 4px; font-size: 1.2rem;"></i>
+                            <p style="margin: 0; color: var(--fg); line-height: 1.6; font-size: 1.1rem;">Server configuration, production support, and issue resolution using Linux and Nginx Server.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 1. PayX Collect -->
+                <div class="project-detailed bento-card">
+                    <div class="p-header">
+                        <div class="p-num">01</div>
+                        <div class="p-title-wrap">
+                            <h3>PayX Collect</h3>
+                            <div class="tag">Financial Data & Escalation System</div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-content">
+                        <div class="p-section">
+                            <div class="p-label">Role</div>
+                            <p>Database Engineer (Database Design, Development & Management), Project Deployment</p>
+                        </div>
+                        <div class="p-section">
+                            <div class="p-label">Overview</div>
+                            <p>A loan collection management platform that enables administrators to manage customers, loans, EMI collections, and payment tracking using loan data consolidated from multiple banking institutions.</p>
+                        </div>
+                        <div class="p-section">
+                            <div class="p-label">Responsibilities</div>
+                            <ul style="list-style: none; padding-left: 0; display: flex; flex-direction: column; gap: 8px; color: var(--muted); font-size: 0.95rem;">
+                                <li style="display: flex; gap: 8px;"><span style="color: var(--gold);">✦</span> Designed and managed database architecture, ER diagrams, database schemas, and data models.</li>
+                                <li style="display: flex; gap: 8px;"><span style="color: var(--gold);">✦</span> Developed and optimized SQL queries, performed schema migrations, and executed production database updates while ensuring data integrity.</li>
+                                <li style="display: flex; gap: 8px;"><span style="color: var(--gold);">✦</span> Integrated databases with backend services using Prisma ORM and supported RESTful APIs and GraphQL APIs.</li>
+                                <li style="display: flex; gap: 8px;"><span style="color: var(--gold);">✦</span> Managed project deployment, Linux server administration, Nginx configuration, environment setup, and provided production support to ensure application reliability.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="p-footer">
+                        <div class="p-label">Technical Architecture</div>
+                        <div class="detailed-stack">
+                            <span>NestJS</span><span>Node.js</span><span>MSSQL</span><span>Prisma ORM</span><span>TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Aahwanam -->
+                <div class="project-detailed bento-card">
+                    <div class="p-header">
+                        <div class="p-num">02</div>
+                        <div class="p-title-wrap">
+                            <h3>Aahwanam</h3>
+                            <div class="tag">Event Service Management Platform</div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-content">
+                        <div class="p-section">
+                            <div class="p-label">Role</div>
+                            <p>Full Stack Developer, Database Development & Management, Project Deployment and Server Management</p>
+                        </div>
+                        <div class="p-section">
+                            <div class="p-label">Overview</div>
+                            <p>Developed and maintained modules for User and vendor managements, service management, bookings and ratings, payments, subscriptions, complaints, and role management.</p>
+                        </div>
+                        <div class="p-section">
+                            <div class="p-label">Responsibilities</div>
+                            <ul style="list-style: none; padding-left: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; color: var(--muted); font-size: 0.95rem;">
+                                <li><span style="color: var(--gold);">✦</span> Backend API Development</li>
+                                <li><span style="color: var(--gold);">✦</span> Database Development</li>
+                                <li><span style="color: var(--gold);">✦</span> GraphQL Integration</li>
+                                <li><span style="color: var(--gold);">✦</span> Admin Panel Development</li>
+                                <li><span style="color: var(--gold);">✦</span> Database Management</li>
+                                <li><span style="color: var(--gold);">✦</span> Deployment & Production Support</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="p-footer">
+                        <div class="p-label">Technical Architecture</div>
+                        <div class="detailed-stack">
+                            <span>React.js</span><span>NestJS</span><span>GraphQL</span><span>MySQL</span><span>SQLite</span><span>Redis</span><span>Prisma ORM</span><span>Linux</span><span>Nginx</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. ITSM -->
+                <div class="project-detailed bento-card">
+                    <div class="p-header">
+                        <div class="p-num">03</div>
+                        <div class="p-title-wrap">
+                            <h3>IT Service Management (ITSM)</h3>
+                            <div class="tag">Enterprise Platform - Web & Mobile</div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-content">
+                        <div class="p-section">
+                            <div class="p-label">Role</div>
+                            <p>Full Stack Developer, Database Development & Management, Project Deployment and Server Management</p>
+                        </div>
+                        <div class="p-section">
+                            <div class="p-label">Overview</div>
+                            <p>Enterprise service management platform for managing service requests, incidents, approvals, onboarding, and offboarding workflows.</p>
+                        </div>
+                        <div class="p-section">
+                            <div class="p-label">Responsibilities</div>
+                            <ul style="list-style: none; padding-left: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; color: var(--muted); font-size: 0.95rem;">
+                                <li><span style="color: var(--gold);">✦</span> Employee & Admin Modules</li>
+                                <li><span style="color: var(--gold);">✦</span> Approval Workflows</li>
+                                <li><span style="color: var(--gold);">✦</span> Authentication & Authorization</li>
+                                <li><span style="color: var(--gold);">✦</span> Database Dev & Management</li>
+                                <li><span style="color: var(--gold);">✦</span> API Development</li>
+                                <li><span style="color: var(--gold);">✦</span> Deployment & Production Support</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="p-footer">
+                        <div class="p-label">Technical Architecture</div>
+                        <div class="detailed-stack">
+                            <span>React Native</span><span>Next.js</span><span>NestJS</span><span>GraphQL</span><span>MySQL</span><span>Prisma ORM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Metro Ticket Booking -->
+                <div class="project-detailed bento-card">
+                    <div class="p-header">
+                        <div class="p-num">04</div>
+                        <div class="p-title-wrap">
+                            <h3>Metro Ticket Booking</h3>
+                            <div class="tag">Transit Application</div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-content">
+                        <div class="p-section">
+                            <div class="p-label">Executive Summary & Impact</div>
+                            <p>Designed and developed a scalable transit application featuring secure authentication, dynamic wallet recharge, digital ticket booking via QR codes, and automated fare calculation.</p>
+                        </div>
+                    </div>
+
+                    <div class="p-footer">
+                        <div class="p-label">Technical Architecture</div>
+                        <div class="detailed-stack">
+                            <span>React.js</span><span>Django</span><span>Python</span><span>REST APIs</span><span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Developer Portfolio -->
+                <div class="project-detailed bento-card">
+                    <div class="p-header">
+                        <div class="p-num">05</div>
+                        <div class="p-title-wrap">
+                            <h3>Developer Portfolio</h3>
+                            <div class="tag">Personal Website</div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-content">
+                        <div class="p-section">
+                            <div class="p-label">Project Summary</div>
+                            <p>A responsive, performance-optimized personal portfolio designed to showcase professional experience, projects, and technical skills.</p>
+                        </div>
+                    </div>
+
+                    <div class="p-footer">
+                        <div class="p-label">Technical Architecture</div>
+                        <div class="detailed-stack">
+                            <span>HTML5</span><span>CSS3</span><span>Vanilla JS</span><span>GitHub Pages</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer reveal">
+        <div class="footer-inner">
+            <div class="signature">M manjusha</div>
+            <div>© <span id="year">2026</span> Manjusha Maddela. All rights reserved.</div>
+            <div class="build">Designed for scale.</div>
+        </div>
+    </footer>
+
+    <!-- OFFCANVAS PROFILE -->
+    <div class="offcanvas-backdrop" id="offcanvasBackdrop"></div>
+    <div class="offcanvas" id="offcanvas">
+        <button class="offcanvas-close" id="offcanvasClose"><i class="fas fa-times"></i></button>
+        <div class="offcanvas-profile-header">
+            <div class="offcanvas-avatar">M</div>
+            <div>
+                <div class="offcanvas-name">Manjusha Maddela</div>
+                <div class="offcanvas-title">Full Stack & Database Engineer</div>
+            </div>
+        </div>
+        
+        <div class="offcanvas-divider"></div>
+        
+        <div class="dropdown-menu">
+            <a href="index.html#about" class="dropdown-item">
+                <i class="fas fa-user"></i> About
+            </a>
+            <a href="index.html#experience" class="dropdown-item">
+                <i class="fas fa-briefcase"></i> Experience
+            </a>
+            <a href="projects.html" class="dropdown-item">
+                <i class="fas fa-code"></i> Projects
+            </a>
+            <a href="personal.html" class="dropdown-item">
+                <i class="fas fa-id-card"></i> Personal Details
+            </a>
+        </div>
+
+        <div class="offcanvas-divider"></div>
+        
+        <div class="dropdown-menu">
+            <a href="index.html#contact" class="dropdown-item">
+                <i class="fas fa-envelope"></i> Contact Me
+            </a>
+            <a href="resume.pdf" class="dropdown-item" download>
+                <i class="fas fa-download"></i> Download Resume
+            </a>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
